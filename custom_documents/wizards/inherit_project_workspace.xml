@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<odoo>
+       <record id="documents.folder_view_form" model="ir.ui.view">
+            <field name="name">inherit.project.workspace.form</field>
+            <field name="model">inherit.project.workspace</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                    <field name="project_name" />
+                    </group>
+                    <footer>
+                        <button name="assign_users" type="object" string="Confirmer" class="oe_highlight"/>
+                         or
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="action_inherit_project_workspace" model="ir.actions.act_window">
+           <field name="name">C'est quoi le nom du projet</field>
+           <field name="type">ir.actions.act_window</field>
+           <field name="res_model">inherit.workspace</field>
+           <field name="view_mode">form</field>
+           <field name="view_id" ref="documents.folder_view_form"/>
+           <field name="target">new</field>
+           <field name="binding_model_id" ref="documents.model_documents_folder" />
+        </record>
+
+
+</odoo>
+
