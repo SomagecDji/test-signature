@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <odoo>
-       <record id="view_documents_folder_form" model="ir.ui.view">
+       <record id="documents_folder_view_form" model="ir.ui.view">
             <field name="name">inherit.project.workspace.form</field>
             <field name="model">inherit.project.workspace</field>
             <field name="arch" type="xml">
