@@ -8,11 +8,13 @@
         	<form string="inherit workspace">
                 <field name="project_name"/>
                 <footer>
-                   <button type="object" name="inherit_workspace" class="oe_highlight" string="Sauvegarder" />
+                   <button type="object" name="inherit_workspace" class="oe_highlight" string="Créer" />
                     <button special="cancel" string="Annuler" class="btn-default"/>
                 </footer>
         	</form>
-            </field>
+                <style>.o_form_statusbar{display: none !important;} </style>
+                </field>        
         </record>
     </data>
 </odoo>
+
