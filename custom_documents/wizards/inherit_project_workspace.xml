@@ -9,7 +9,7 @@
                     <field name="project_name" />
                     </group>
                     <footer>
-                        <button name="assign_users" type="object" string="Confirmer" class="oe_highlight"/>
+                        <button name="inherit_workspace" type="object" string="Confirmer" class="oe_highlight"/>
                          or
                         <button string="Cancel" class="btn-secondary" special="cancel"/>
                     </footer>
