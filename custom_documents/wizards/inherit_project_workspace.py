@@ -5,7 +5,7 @@ from odoo import _, api, fields, models
 from odoo.exceptions import UserError,ValidationError
 
 class FolderInheritProjectWorkspace(models.TransientModel):
-      _name='inherit.projetc.workspace'
+      _name='inherit.project.workspace'
       project_name=fields.Char('Nom du projet')
       def inherit_workspace(self):
           main_workspace_id=self.env['documents.folder'].search([('id','=',3)]).id
