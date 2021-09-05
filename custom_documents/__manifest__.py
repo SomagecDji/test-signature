@@ -19,7 +19,7 @@
     # always loaded
     'data': [
         'views/templates.xml',
-        'wizards/inherit_project_workspace.xml'
+        'views/inherit_project_workspace.xml'
     ],
 
 }
