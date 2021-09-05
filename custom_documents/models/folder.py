@@ -21,6 +21,16 @@ class DocumentFolder(models.Model):
                     for id in [group.id for group in  folder.group_ids ]:
                         parent_folder.write({'read_group_ids':[(4,id)]})
         return()
+    def view_inherit_workspace(self):
+        form_view = self.env.ref('akwa_purchase.current_rejection_remark_bc_form_view')
+        self.ensure_one()
+        return {'name': _('Merci de saisir le nom du projet:'),
+                'type': 'ir.actions.act_window',
+                'res_model': 'documents.folder',
+                'view_mode': 'form',
+                'view_id': form_view.id,
+                'res_id': self.id,
+                'target': 'new'}
 """class SignSendRequest(models.Model):
     _description = 'Sign Send Request'
     _inherit = 'sign.send.request' """
