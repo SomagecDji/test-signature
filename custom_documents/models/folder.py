@@ -22,7 +22,7 @@ class DocumentFolder(models.Model):
                         parent_folder.write({'read_group_ids':[(4,id)]})
         return()
     def view_inherit_workspace(self):
-        form_view = self.env.ref('documents_folder.inherit_workspace_form_view')
+        form_view = self.env.ref('custom_documents.inherit_workspace_form_view')
         self.ensure_one()
         return {'name': _('Merci de saisir le nom du projet:'),
                 'type': 'ir.actions.act_window',
