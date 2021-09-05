@@ -19,7 +19,7 @@
         <record id="action_inherit_project_workspace" model="ir.actions.act_window">
            <field name="name">C'est quoi le nom du projet</field>
            <field name="type">ir.actions.act_window</field>
-           <field name="res_model">inherit.projet.workspace</field>
+           <field name="res_model">inherit.project.workspace</field>
            <field name="view_mode">form</field>
            <field name="view_id" ref="documents.folder_view_form"/>
            <field name="target">new</field>
