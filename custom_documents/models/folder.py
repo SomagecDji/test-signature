@@ -36,6 +36,7 @@ class DocumentFolder(models.Model):
         document_folder=self.env['documents.folder']
         document_parent_0=document_folder.create({'name':self.project_name})
         all_subfolders0=self.env['documents.folder'].search([('parent_folder_id','=','main_workspace_id')])
+        raise UserError(_(all_subfolders0))
         if len(all_subfolders0)!=0:
             for i in all_subfolders0:
                 document_folder=self.env['documents.folder']
