@@ -44,7 +44,7 @@ class DocumentFolder(models.Model):
                 if len(all_subfolders1)!=0:
                     for j in all_subfolders1:
                         document_folder=self.env['documents.folder']
-                        document_parent_2=document_folder.create({'name':j.name,'parent_folder_id':document_parent_0.id})
+                        document_parent_2=document_folder.create({'name':j.name,'parent_folder_id':document_parent_1.id})
                         all_subfolders2=self.env['documents.folder'].search([('id','=',j.id)])
         return {'type': 'ir.actions.act_window_close'}     
 """class SignSendRequest(models.Model):
