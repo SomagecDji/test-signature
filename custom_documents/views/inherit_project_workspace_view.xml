@@ -12,8 +12,7 @@
                     <button special="cancel" string="Annuler" class="btn-default"/>
                 </footer>
         	</form>
-                <style>.o_form_statusbar{display: none !important;} </style>
-                </field>        
+            </field>        
         </record>
     </data>
 </odoo>
